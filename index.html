@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Mesto</title>
+</head>
+
+<body class="root">
+    <!--header-->
+    <header class="header">
+        <img src="./images/logo-white.svg" alt="логотип Место" class="header__logo">
+    </header>
+
+    <main class="content">
+        <!--profile-->
+        <section class="profile">
+            <div class="profile__user">
+                <img src="./images/avatar.jpg" alt="аватар пользователя" class="profile__avatar">
+
+                <div class="profile__name">
+                    <h1 class="profile__title">Жак-Ив Кусто</h1>
+                    <button class="profile__button-edit"></button>
+                </div>
+                <p class="profile__subtitle">Исследователь океана</p>
+
+            </div>
+
+            <button class="profile__button-add"></button>
+        </section>
+
+        <!--elements-->
+        <section class="elements">
+
+            <!--card 1-->
+            <article class="card">
+                <img src="./images/1583049706_i-rdtdb4mig.jpg" alt="Иремель" class="card__cover">
+                <div class="card__description">
+                    <h2 class="card__title">Иремель</h2>
+                    <button class="card__button-like"></button>
+                </div>
+            </article>
+
+            <!--card 1-->
+            <article class="card">
+                <img src="./images/26124757.jpg" alt="Большой Ямантау" class="card__cover">
+                <div class="card__description">
+                    <h2 class="card__title">Большой Ямантау</h2>
+                    <button class="card__button-like"></button>
+                </div>
+            </article>
+
+            <!--card 1-->
+            <article class="card">
+                <img src="./images/275427912_289156386688446_6019269712833232315_n.jpg" alt="Нугушское водохранилище"
+                    class="card__cover">
+                <div class="card__description">
+                    <h2 class="card__title">Нугушское водохранилище</h2>
+                    <button class="card__button-like"></button>
+                </div>
+            </article>
+
+            <!--card 1-->
+            <article class="card">
+                <img src="./images/6c6d344a8230cbd4b7ffe720f7406786.jpg" alt="Пещера Шульган-Таш" class="card__cover">
+                <div class="card__description">
+                    <h2 class="card__title">Пещера Шульган-Таш</h2>
+                    <button class="card__button-like"></button>
+                </div>
+            </article>
+
+            <!--card 1-->
+            <article class="card">
+                <img src="./images/Gora_Malinovaja_6.jpg" alt="Гора Малиновая" class="card__cover">
+                <div class="card__description">
+                    <h2 class="card__title">Гора Малиновая</h2>
+                    <button class="card__button-like"></button>
+                </div>
+            </article>
+
+            <!--card 1-->
+            <article class="card">
+                <img src="./images/Group-12-DSC_3350_DSC_3353-4-images_small.jpg" alt="Водопад Атыш"
+                    class="card__cover">
+                <div class="card__description">
+                    <h2 class="card__title">Водопад Атыш</h2>
+                    <button class="card__button-like"></button>
+                </div>
+            </article>
+
+            <footer class="footer">
+                <p class="footer__copyrights">&copy; 2023 Mesto Russia</p>
+            </footer>
+
+            <!--popup-->
+            <section class="popup__bg">
+                <form class="popup">
+                    <button class="popup__button-close" type="button"></button>
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <fieldset class="popup__data">
+                        <input class="popup__input popup__input_title" type="text" placeholder="Имя" autocomplete="off"
+                            value="Жак-Ив Кусто">
+                        <input class="popup__input popup__input_subtitle" type="text" placeholder="Описание"
+                            autocomplete="off" value="Исследователь океана">
+                    </fieldset>
+                    <button class="popup__button-submit" type="submit">Сохранить</button>
+                </form>
+            </section>
+
+            <script src="./scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.profile__user {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-areas:
+        "avatar title button-edit"
+        "avatar subtitle .";
+    row-gap: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .profile__user {
+        row-gap: 0;
+        grid-template-areas:
+            "avatar avatar"
+            "title button-edit"
+            "subtitle subtitle";
+    }
+}

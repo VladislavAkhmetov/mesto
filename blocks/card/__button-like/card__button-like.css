@@ -1,0 +1,14 @@
+.card__button-like {
+    background: url('../../../images/heart-icon-outline.svg') transparent center no-repeat;
+    width: 22px;
+    height: 19px;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+@media (hover: hover) {
+    .card__button-like:hover {
+        cursor: pointer;
+        opacity: .5;
+    }
+}
