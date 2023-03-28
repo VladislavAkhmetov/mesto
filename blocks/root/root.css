@@ -1,5 +1,5 @@
 .root {
-    background-color: #000000;
+    background-color: black;
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
@@ -11,6 +11,5 @@
     -moz-text-size-adjust: 100%;
     color: white;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
