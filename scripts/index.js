@@ -1,5 +1,5 @@
-let popupBg = document.querySelector('.popup__bg'); // Тёмный фон
-let popup = document.querySelector('.popup'); // Окно
+let popup = document.querySelector('.popup'); // Тёмный фон
+let popupBody = document.querySelector('.popup__body'); // Окно
 let openPopupButton = document.querySelectorAll('.profile__button-edit'); // Кнопка редактирования
 let closePopupButton = document.querySelector('.popup__button-close'); // Кнопка закрытия
 let titleInput = document.querySelector('.popup__input_title'); // Присваиваем имя переменной введенной информации
@@ -11,28 +11,28 @@ let saveButton = document.querySelector('.popup__button-submit'); // Имя пе
 openPopupButton.forEach((button) => { // Перебираем все кнопки
     button.addEventListener('click', (event) => { // Для каждой вешаем обработчик событий на клик
         event.preventDefault();
-        popupBg.classList.add('active');
         popup.classList.add('active');
+        popupBody.classList.add('active');
         titleInput.value = profileTitle.textContent;
         subtitleInput.value = profileSubtitle.textContent;
     })
 });
 
 closePopupButton.addEventListener('click', () => { // При клике на крестик попап закрывается
-    popupBg.classList.remove('active');
     popup.classList.remove('active');
+    popupBody.classList.remove('active');
 });
 
 document.addEventListener('click', (e) => { // При клике на фоне попап закрывается
-    if (e.target === popupBg) {
-        popupBg.classList.remove('active');
+    if (e.target === popup) {
         popup.classList.remove('active');
+        popupBody.classList.remove('active');
     }
 });
 
 function popupClose() {
-    popupBg.classList.remove('active');
     popup.classList.remove('active');
+    popupBody.classList.remove('active');
 }
 
 function formSubmit(event) {
