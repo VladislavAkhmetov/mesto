@@ -1,23 +1,21 @@
 .profile {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
 
-@media only screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     .profile {
-        padding: 0 19px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-}
-
-@media only screen and (max-width: 767px) {
+  }
+  
+  @media screen and (max-width: 670px) {
     .profile {
-        text-align: center;
-        flex-direction: column;
-        gap: 32px;
+      flex-direction: column;
+      gap: 32px;
     }
-}
+  }

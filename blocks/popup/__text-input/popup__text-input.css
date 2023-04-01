@@ -1,4 +1,4 @@
-.popup__input {
+.popup__text-input {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -8,9 +8,9 @@
     border: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    padding: 13px 0 13px 0;
+    padding: 13px 0 10px 0;
 }
 
-.popup__input:focus {
+.popup__text-input:focus {
     outline-color: lightgreen;
 }

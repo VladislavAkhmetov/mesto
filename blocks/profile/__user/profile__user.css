@@ -1,19 +1,18 @@
 .profile__user {
-    display: grid;
-    margin: 0;
-    padding: 0;
-    grid-template-areas:
-        "avatar title button-edit"
-        "avatar subtitle .";
-    row-gap: 10px;
-}
+    display: flex;
+    align-items: center;
+  }
 
-@media only screen and (max-width: 767px) {
-    .profile__user {
-        row-gap: 0;
-        grid-template-areas:
-            "avatar avatar"
-            "title button-edit"
-            "subtitle subtitle";
+  @media only screen and (max-width: 900px) {
+    .header__user {
+        margin-left: 27px;
     }
 }
+  
+  @media screen and (max-width: 670px) {
+    .profile__user {
+      flex-direction: column;
+      gap: 28px;
+    }
+  }
+  
