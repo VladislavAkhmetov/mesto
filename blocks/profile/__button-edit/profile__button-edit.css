@@ -1,10 +1,10 @@
 .profile__button-edit {
     position: absolute;
     right: -40px;
-    top: 15px;  
+    top: 15px;
     width: 24px;
     height: 24px;
-    border: 1px solid white;  
+    border: 1px solid white;
     background-image: url('../../../images/edit-button\ w-o\ border.svg');
     background-size: 10px 10px;
     background-position: center;
@@ -25,7 +25,7 @@
       top: 6px;
       right: -30px;
       width: 18px;
-      height: 18px;  
+      height: 18px;
       background-size: 8px 8px;
     }
   }
