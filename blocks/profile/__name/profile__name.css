@@ -13,10 +13,9 @@
       grid-template-columns: 1fr 18px 189px 18px 1fr;
       column-gap: 10px;
       max-width: 100%;
-      margin: 20px 0 0;
+      margin: 25px 0 0;
       align-items: center;
       justify-content: center;
+      row-gap: 8px;
     }
   }
-  
-
