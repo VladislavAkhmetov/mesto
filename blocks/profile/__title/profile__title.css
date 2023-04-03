@@ -4,29 +4,19 @@
     font-weight: 500;
     font-size: 42px;
     line-height: 1.14;
-    max-width: 350px;
+    max-width: 294px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
   
-  @media screen and (max-width: 900px) {
-    .profile__title {
-      font-size: 32px;
-      line-height: 32px;
-    }
-  }
-
   @media screen and (max-width: 710px) {
     .profile__title {
-      max-width: 240px;
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .profile__title {
+      max-width: 190px;
       font-size: 27px;
-      text-align: center;
+      line-height: 33px;
+      justify-self: center;
+      grid-column: 3/4;
     }
   }
   

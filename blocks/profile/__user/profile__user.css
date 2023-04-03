@@ -1,6 +1,6 @@
 .profile__user {
     display: flex;
-    align-items: center;
+    max-width: 100%;
   }
 
   @media only screen and (max-width: 900px) {
@@ -9,10 +9,10 @@
     }
 }
   
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: 710px) {
     .profile__user {
       flex-direction: column;
-      gap: 28px;
+      align-items: center;
     }
   }
   

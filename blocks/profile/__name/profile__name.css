@@ -1,12 +1,21 @@
 .profile__name {
-    position: relative;
-    padding-left: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 0px;
+    column-gap: 18px;
+    max-width: 336px;
+    margin: 22px 0 10px 30px;
+    padding: 0;
   }
 
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: 710px) {
     .profile__name {
-      padding: 0;
+      grid-template-columns: 1fr 18px 189px 18px 1fr;
+      column-gap: 10px;
+      max-width: 100%;
+      margin: 20px 0 0;
       align-items: center;
+      justify-content: center;
     }
   }
   

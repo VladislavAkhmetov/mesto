@@ -7,7 +7,9 @@
   margin: 0;
   padding: 0;
   border: 2px solid white;
+  border-radius: 2px;
   transition: opacity .2s ease-out;
+  align-self: center;
 }
 
 @media (hover: hover) {
@@ -17,20 +19,11 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 710px) {
   .profile__button-add {
-      background-size: 16px 16px;
-  }
-}
+    background-size: 16px 16px;
+    width: 100%;
+    margin: 30px auto 0;
 
-@media only screen and (max-width: 670px) {
-  .profile__button-add {
-      width: 98%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .profile__button-add {
-      width: 282px;
   }
 }

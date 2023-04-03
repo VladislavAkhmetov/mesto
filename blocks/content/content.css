@@ -1,10 +1,7 @@
 .content {
     margin: 0;
-    padding: 40px 0 0 0;
     box-sizing: border-box;
-    width: 100%;
-    max-width: 880px;
-    display: flex;
+    width: 100%;    
     flex-direction: column;
 }
 
@@ -12,11 +9,5 @@
     .content {
         justify-content: center;
         align-items: center;
-    }
-  }
-
-  @media screen and (max-width: 320px) {
-    .content {
-        padding: 42px 0 0 0;
     }
   }

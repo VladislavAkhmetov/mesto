@@ -1,8 +1,8 @@
 .elements {
-  margin: 0;
-  padding-top: 51px;
+  margin: 0 auto 0;
   box-sizing: border-box;
   width: 100%;
+  max-width: 880px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
   gap: 20px 17px;
@@ -16,17 +16,8 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 710px) {
     .elements {
         padding-top: 36px;
     }
-}
-
-@media only screen and (max-width: 634px) {
-    .elements {
-        padding-top: 36px;
-    }
-}
-
-
-  
+}  
