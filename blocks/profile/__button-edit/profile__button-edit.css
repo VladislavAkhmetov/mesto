@@ -28,8 +28,10 @@
     }
   }
 
-.profile__button-edit:hover {
-    opacity: 0.5;
+@media (hover: hover) {
+  .profile__button-edit:hover {
+      cursor: pointer;
+      opacity: 0.6;
+  }
 }
-
   
