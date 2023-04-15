@@ -1,0 +1,4 @@
+.card__button-like_active {
+    background: url('../../../../images/heart-icon-filled.svg') transparent center no-repeat;
+    opacity: 1;
+}

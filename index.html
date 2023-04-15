@@ -33,78 +33,25 @@
             <button class="profile__button-add" type="button"></button>
         </section>
 
-        <!--elements-->
+        <!--elements template-->
         <section class="elements">
-
-            <!--card 1-->
-            <article class="card">
-                <img src="./images/1583049706_i-rdtdb4mig.jpg" alt="Иремель" class="card__cover">
-                <div class="card__description">
-                    <h2 class="card__title">Иремель</h2>
-                    <button class="card__button-like" type="button"></button>
-                </div>
-            </article>
-
-            <!--card 2-->
-            <article class="card">
-                <img src="./images/26124757.jpg" alt="Большой Ямантау" class="card__cover">
-                <div class="card__description">
-                    <h2 class="card__title">Большой Ямантау</h2>
-                    <button class="card__button-like" type="button"></button>
-                </div>
-            </article>
-
-            <!--card 3-->
-            <article class="card">
-                <img src="./images/275427912_289156386688446_6019269712833232315_n.jpg" alt="Нугушское водохранилище"
-                    class="card__cover">
-                <div class="card__description">
-                    <h2 class="card__title">Нугушское водохранилище</h2>
-                    <button class="card__button-like" type="button"></button>
-                </div>
-            </article>
-
-            <!--card 4-->
-            <article class="card">
-                <img src="./images/6c6d344a8230cbd4b7ffe720f7406786.jpg" alt="Пещера Шульган-Таш" class="card__cover">
-                <div class="card__description">
-                    <h2 class="card__title">Пещера Шульган-Таш</h2>
-                    <button class="card__button-like" type="button"></button>
-                </div>
-            </article>
-
-            <!--card 5-->
-            <article class="card">
-                <img src="./images/Gora_Malinovaja_6.jpg" alt="Гора Малиновая" class="card__cover">
-                <div class="card__description">
-                    <h2 class="card__title">Гора Малиновая</h2>
-                    <button class="card__button-like" type="button"></button>
-                </div>
-            </article>
-
-            <!--card 6-->
-            <article class="card">
-                <img src="./images/Group-12-DSC_3350_DSC_3353-4-images_small.jpg" alt="Водопад Атыш"
-                    class="card__cover">
-                <div class="card__description">
-                    <h2 class="card__title">Водопад Атыш</h2>
-                    <button class="card__button-like" type="button"></button>
-                </div>
-            </article>
+            <ul class="elements__cards">
+            </ul>
         </section>
     </main>
+
     <footer class="footer">
         <p class="footer__copyrights">&copy; 2023 Mesto Russia</p>
     </footer>
 
 
 
-    <!--popup-->
-    <div class="popup">
+    <!--popup profile-->
+    <div class="popup popup_type_edit">
         <div class="popup__container">
-            <button class="popup__button-close" type="button"></button>
+            <button class="popup__button-close popup__close-button_profile" type="button"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__form" name="profile-edit-form">
+            <form class="popup__form popup__form_edit-profile" name="profile-edit-form">
                 <fieldset class="popup__data">
                     <input class="popup__text-input popup__text-input_type_title" type="text" placeholder="Имя"
                         autocomplete="off" value="Жак-Ив Кусто" name='title'>
@@ -116,7 +63,48 @@
         </div>
     </div>
 
+    <!--popup card add-->
+    <div class="popup popup_type_add">
+        <div class="popup__container">
+            <button type="button" class="popup__button-close popup__close-button_card" aria-label="Закрыть"></button>
+            <h2 class="popup__title">Новое место</h2>
+            <form class="popup__form popup__form_add-card" name="addCard">
+                <fieldset class="popup__data">
+                    <input type="text" name="placeName" class="popup__text-input popup__input_type_card-name" required
+                        placeholder="Название">
+                    <input type="url" name="placeURL" class="popup__text-input popup__input_type_card-link" required
+                        placeholder="Ссылка на картинку">
+                </fieldset>
+                <button class="popup__button-submit" type="submit">Создать</button>
+            </form>
+        </div>
+    </div>
+
+    <!--popup big image-->
+    <div class="popup popup_type_large-image">
+        <div class="popup__image-container">
+            <button class="popup__button-close popup__close_large-image" type="button" aria-label="Закрыть"></button>
+            <figure class="popup__figure">
+                <img class="popup__image" src="#" alt="#">
+                <figcaption class="popup__image-caption"></figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <template class="card-template">
+        <li class="card">
+            <button class="card__button-delete" type="button" aria-label="Удалить"></button>
+            <img src="#" alt="" class="card__cover">
+            <div class="card__description">
+                <h2 class="card__title"></h2>
+                <button class="card__button-like" type="button" aria-label="Нравится"></button>
+            </div>
+        </li>
+    </template>
+
+    <script src="./scripts/cards.js"></script>
     <script src="./scripts/index.js"></script>
+
 </body>
 
 </html>
