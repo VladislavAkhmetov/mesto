@@ -1,3 +1,5 @@
 .popup__container_type_large-image {
     background-color: rgba(0, 0, 0, 0.9);
+    max-width: 75vw;
+    max-height: 75vh;
 }
